@@ -1,137 +1,289 @@
-# Generador de Figuras para el Análisis de Impactos Ambientales
+# Análisis Comparativo de Impactos Ambientales mediante ACV
 
-## Trabajo Fin de Máster (TFM)
+## Automatización, procesamiento y visualización reproducible mediante Python
 
-Este proyecto tiene como finalidad automatizar la generación de figuras utilizadas en el análisis de impactos ambientales del Trabajo Fin de Máster (TFM), a partir de los resultados obtenidos mediante un Análisis de Ciclo de Vida (ACV).
+---
 
-El desarrollo surgió con el propósito de reemplazar la elaboración manual de gráficos en Microsoft Excel por un procedimiento reproducible mediante Python, permitiendo actualizar las figuras de forma automática cuando cambian los resultados del ACV.
+## Descripción del proyecto
+
+Este repositorio contiene el desarrollo computacional utilizado para el análisis comparativo de impactos ambientales mediante **Análisis de Ciclo de Vida (ACV)** entre las plantas de **Cerceda y Vedra**.
+
+El proyecto tiene como finalidad transformar los resultados obtenidos desde un software de ACV en información analítica y gráfica reproducible mediante Python, permitiendo:
+
+- procesar automáticamente los resultados ambientales;
+- comparar cuantitativamente ambas alternativas;
+- calcular diferencias relativas entre plantas;
+- identificar categorías ambientales dominantes;
+- generar tablas comparativas;
+- producir figuras con calidad adecuada para un documento académico.
+
+El desarrollo surge con el propósito de reemplazar la elaboración manual de gráficos mediante Microsoft Excel por un flujo automatizado, reproducible y fácilmente actualizable.
 
 ---
 
 # Objetivo
 
-Desarrollar un script sencillo que permita:
+El objetivo principal es desarrollar una metodología computacional que permita analizar y representar resultados de ACV mediante Python.
+
+El sistema desarrollado permite:
 
 - leer automáticamente los resultados exportados desde el software de ACV;
-- generar figuras con calidad adecuada para un documento académico;
-- reducir el tiempo requerido para actualizar las figuras;
-- asegurar que todas las figuras mantengan un formato uniforme.
+- extraer indicadores ambientales normalizados;
+- comparar Cerceda frente a Vedra;
+- calcular relaciones relativas entre impactos;
+- determinar diferencias de orden de magnitud;
+- evaluar la contribución porcentual de cada categoría;
+- generar tablas y figuras automáticamente.
 
 ---
 
-# Estructura del proyecto
+# Flujo general del análisis
+
+El procesamiento desarrollado sigue la siguiente secuencia:
 
 ```
-TFM_Graficos_ACV
-│
-├── data
-│     resultados.xlsx
-│
-├── figuras
-│     Figura_Final_ACV.png
-│
-├── graficos_acv.py
-│
-└── README.md
+Resultados ACV (Excel)
+          │
+          ▼
+Lectura automática mediante Python
+          │
+          ▼
+Extracción de indicadores ambientales
+          │
+          ▼
+Procesamiento y normalización
+          │
+          ▼
+Comparación Cerceda - Vedra
+          │
+          ▼
+Cálculo de ratios y diferencias logarítmicas
+          │
+          ▼
+Análisis de contribución
+          │
+          ▼
+Generación de tablas y figuras
 ```
 
 ---
 
-# Archivo de entrada
+# Datos de entrada
 
-El programa utiliza como fuente de información el archivo:
+El archivo principal utilizado como fuente de información es:
 
 ```
 data/resultados.xlsx
 ```
 
-Hoja utilizada:
+La hoja analizada corresponde a:
 
 ```
 Evaluación de Impactos
 ```
 
-El script extrae automáticamente los impactos ambientales normalizados correspondientes a las plantas de:
+Los datos corresponden a los impactos ambientales normalizados obtenidos para:
 
-- Cerceda
-- Vedra
+- Planta Cerceda
+- Planta Vedra
 
 ---
 
-# Metodología
+# Categorías ambientales evaluadas
 
-Durante el desarrollo se evaluaron distintas alternativas de representación gráfica con el objetivo de identificar la opción que ofreciera la mejor interpretación de los resultados.
+El análisis considera las siguientes categorías:
+
+| Código | Categoría ambiental |
+|---|---|
+| GWP | Global Warming Potential |
+| FEU | Freshwater Ecotoxicity |
+| MEU | Marine Ecotoxicity |
+| TET | Terrestrial Ecotoxicity |
+| FET | Freshwater Ecotoxicity |
+| MET | Marine Ecotoxicity |
+| WU | Water Use |
+
+Los indicadores fueron analizados utilizando dos unidades normalizadas:
+
+- HabEq
+- kg PO4 eq
+
+---
+
+# Metodología desarrollada
+
+Durante el desarrollo se evaluaron diferentes alternativas de representación gráfica con el objetivo de seleccionar la forma más adecuada para interpretar los resultados del ACV.
 
 Las alternativas consideradas fueron:
 
-- gráfico de barras verticales;
-- gráfico de barras horizontales;
-- gráfico tipo Lollipop;
-- comparación mediante impactos reales;
-- comparación mediante impactos normalizados;
-- figura compuesta con múltiples paneles.
+- gráficos de barras verticales;
+- gráficos de barras horizontales;
+- gráficos tipo Lollipop;
+- perfiles relativos normalizados;
+- comparación mediante escala logarítmica;
+- figuras compuestas con múltiples paneles.
 
 Cada alternativa fue evaluada considerando:
 
 - claridad visual;
 - facilidad de interpretación;
-- comparación entre ambas plantas;
-- adecuación para un documento académico.
+- comparación entre plantas;
+- utilidad dentro del capítulo de Resultados y Discusión del TFM.
 
 ---
 
-# Resultado de la evaluación
+# Procesamiento mediante Python
 
-Tras comparar las distintas opciones se seleccionó el gráfico de barras verticales utilizando impactos normalizados.
-
-La elección se fundamentó en que esta representación permite:
-
-- comparar directamente ambas plantas;
-- identificar rápidamente las categorías dominantes;
-- mantener una lectura sencilla;
-- facilitar la interpretación dentro del capítulo de Resultados y Discusión del TFM.
-
----
-
-# Criterios adoptados
-
-Durante la construcción de la figura final se aplicaron los siguientes criterios:
-
-- utilización de impactos normalizados;
-- comparación directa entre Cerceda y Vedra;
-- ordenamiento de las categorías según su magnitud relativa;
-- utilización de colores sobrios para facilitar la lectura.
-
-La categoría **FET** fue excluida de la figura final debido a que presenta un valor normalizado idéntico (1,0) para ambas plantas.
-
-Su inclusión reducía significativamente la capacidad de visualizar las diferencias existentes entre el resto de las categorías de impacto.
-
----
-
-# Figura final
-
-La figura obtenida permite observar de forma inmediata que:
-
-- MET corresponde al impacto relativo de mayor importancia en ambas plantas;
-- FEU representa la segunda categoría de mayor contribución;
-- Vedra presenta impactos normalizados superiores a Cerceda en la mayoría de las categorías evaluadas;
-- las diferencias entre GWP, FEU, MEU y TET pueden apreciarse claramente al excluir la categoría FET de la representación gráfica.
-
----
-
-# Archivos generados
-
-El programa genera automáticamente la siguiente figura:
+El proyecto fue desarrollado mediante una estructura modular:
 
 ```
-Figura_Final_ACV.png
+TFM_ACV_Cerceda_Vedra
+│
+├── data
+│   └── resultados.xlsx
+│
+├── docs
+│   ├── metodologia.md
+│   ├── resultados.md
+│   └── interpretacion.md
+│
+├── figuras
+│   └── figuras generadas automáticamente
+│
+├── resultados
+│   └── tablas y análisis exportados
+│
+├── src
+│   ├── lector_excel.py
+│   ├── procesador.py
+│   ├── analisis_acv.py
+│   ├── analisis_contribucion.py
+│   ├── tabla_comparativa.py
+│   └── generación de figuras
+│
+├── graficos_acv.py
+├── requirements.txt
+└── README.md
 ```
 
-Características:
+---
 
-- formato PNG;
-- resolución de 600 dpi;
-- lista para ser incorporada directamente al TFM.
+# Análisis comparativo de impactos
+
+Para cada categoría ambiental se calcularon:
+
+## Ratio relativo
+
+\[
+Ratio=\frac{Cerceda}{Vedra}
+\]
+
+permitiendo determinar cuántas veces un impacto es superior entre ambas plantas.
+
+
+## Diferencia logarítmica
+
+\[
+Diferencia=\log_{10}\left(\frac{Cerceda}{Vedra}\right)
+\]
+
+Esta representación permite comparar diferencias de varios órdenes de magnitud.
+
+---
+
+# Resultados principales
+
+El análisis muestra diferencias significativas entre ambas plantas.
+
+Las categorías con mayor diferencia relativa corresponden a:
+
+## Freshwater Ecotoxicity (FET)
+
+Para HabEq:
+
+```
+Cerceda / Vedra ≈ 94,9 veces
+```
+
+Para kg PO4 eq:
+
+```
+Cerceda / Vedra ≈ 344 veces
+```
+
+
+## Marine Ecotoxicity (MET)
+
+Para HabEq:
+
+```
+Cerceda / Vedra ≈ 92,5 veces
+```
+
+Para kg PO4 eq:
+
+```
+Cerceda / Vedra ≈ 336 veces
+```
+
+Estas categorías representan los principales factores diferenciadores del sistema analizado.
+
+---
+
+# Análisis de contribución
+
+Además de la comparación directa, se realizó un análisis de contribución para identificar qué categorías tienen mayor participación dentro del impacto total.
+
+Los resultados muestran que:
+
+- FET constituye la principal contribución en ambas plantas.
+- MET corresponde a la segunda categoría dominante.
+- FEU presenta una contribución relevante especialmente en Vedra.
+- Las categorías GWP y TET presentan menor participación relativa.
+
+---
+
+# Figuras generadas
+
+El proyecto genera automáticamente figuras listas para incorporarse al documento académico.
+
+
+## Comparación HabEq
+
+![Comparación HabEq](figuras/Figura_Final_Comparacion_HabEq.png)
+
+
+## Comparación kg PO4 eq
+
+![Comparación kg PO4 eq](figuras/Figura_Final_Comparacion_KgPO4Eq.png)
+
+
+## Ranking de contribuciones
+
+![Ranking Cerceda HabEq](figuras/Ranking_Cerceda_HabEq.png)
+
+---
+
+# Tablas generadas
+
+El sistema genera automáticamente:
+
+- tablas comparativas ACV;
+- ratios Cerceda/Vedra;
+- diferencias logarítmicas;
+- análisis de contribución porcentual.
+
+Los resultados se almacenan en:
+
+```
+resultados/
+```
+
+incluyendo formatos:
+
+- Excel (.xlsx)
+- CSV
+- TXT
 
 ---
 
@@ -139,19 +291,28 @@ Características:
 
 Lenguaje:
 
-- Python
+- Python 3.x
 
-Bibliotecas:
 
-- openpyxl
-- matplotlib
+Bibliotecas principales:
+
+- pandas
 - numpy
+- matplotlib
+- openpyxl
+
+
+Instalación de dependencias:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
 # Reproducibilidad
 
-Para actualizar las figuras únicamente es necesario reemplazar el archivo:
+Para actualizar el análisis únicamente es necesario reemplazar:
 
 ```
 data/resultados.xlsx
@@ -163,12 +324,26 @@ y ejecutar:
 python graficos_acv.py
 ```
 
-Las figuras serán generadas nuevamente utilizando los datos actualizados, manteniendo el mismo formato gráfico.
+Los módulos de procesamiento permiten regenerar:
+
+- análisis comparativos;
+- tablas;
+- figuras;
+- resultados estadísticos.
+
+Manteniendo siempre el mismo formato gráfico y estructura metodológica.
 
 ---
 
 # Conclusión
 
-La utilización de Python permitió automatizar completamente la generación de las figuras utilizadas en el análisis de impactos ambientales, reduciendo el tiempo de elaboración, eliminando tareas repetitivas y asegurando la reproducibilidad de los resultados.
+El desarrollo permitió transformar un proceso manual de generación de gráficos ACV en un flujo automatizado, reproducible y documentado mediante Python.
 
-Más allá de la automatización, el desarrollo permitió evaluar diferentes alternativas de visualización y seleccionar aquella que ofrecía la mejor capacidad de interpretación para apoyar la discusión de los resultados del ACV en el Trabajo Fin de Máster.
+Además de reducir tiempos de elaboración, la metodología implementada permitió:
+
+- mejorar la trazabilidad del análisis;
+- disminuir errores asociados a procesamiento manual;
+- comparar alternativas ambientales de forma cuantitativa;
+- facilitar la interpretación de resultados dentro del Trabajo Fin de Máster.
+
+El repositorio constituye una herramienta reproducible para el análisis comparativo de impactos ambientales mediante ACV.
