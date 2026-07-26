@@ -1046,7 +1046,7 @@ El enfoque adoptado contribuye a la construcción de estudios ambientales más e
 
 ---
 
-## 6. Estructura del proyecto
+# 6. Estructura del proyecto
 
 
 El proyecto fue organizado considerando una separación clara entre datos, procesos, resultados y documentación técnica.
@@ -1100,7 +1100,7 @@ Esta organización contribuye a garantizar la reproducibilidad del análisis y l
 
 ---
 
-## 7. Preparación y procesamiento de datos ambientales
+# 7. Preparación y procesamiento de datos ambientales
 
 
 Los datos utilizados para el análisis fueron obtenidos desde los resultados generados por el modelo de Análisis de Ciclo de Vida (ACV).
@@ -1375,7 +1375,7 @@ Este procedimiento permitió reducir errores asociados al procesamiento manual y
 
 ---
 
-## 8. Resultados del análisis comparativo
+ 8. Resultados del análisis comparativo
 
 
 Los resultados obtenidos fueron organizados mediante tablas resumen para facilitar la comparación entre Cerceda y Vedra.
@@ -1446,10 +1446,10 @@ Las figuras obtenidas forman parte del soporte visual utilizado para presentar l
 
 ---
 
-## 9. Visualización de resultados
+# 9. Visualización de resultados
 
 
-### 9.1 Comparación global de impactos ambientales
+## 9.1 Comparación global de impactos ambientales
 
 
 Se generó un gráfico comparativo entre Cerceda y Vedra considerando todas las categorías de impacto evaluadas.
@@ -1465,7 +1465,7 @@ El gráfico permite visualizar:
 
 La representación facilita identificar rápidamente qué instalación presenta mayores contribuciones ambientales en cada indicador.
 
-### 9.2 Gráfico comparativo por categorías de impacto
+## 9.2 Gráfico comparativo por categorías de impacto
 
 
 Se generaron gráficos de barras comparativos para representar los valores obtenidos en cada categoría ambiental.
@@ -1485,7 +1485,7 @@ Estos gráficos fueron utilizados para identificar los indicadores donde existen
 
 ---
 
-### 9.3 Gráfico de diferencias relativas
+## 9.3 Gráfico de diferencias relativas
 
 
 Se desarrolló un gráfico específico para representar las diferencias porcentuales entre Cerceda y Vedra.
@@ -1505,7 +1505,7 @@ La representación gráfica facilitó identificar rápidamente los impactos dond
 
 ---
 
-### 9.4 Gráfico de contribución por categoría ambiental
+## 9.4 Gráfico de contribución por categoría ambiental
 
 
 Se generaron gráficos de contribución relativa para determinar la participación de cada categoría dentro del impacto total.
@@ -1525,7 +1525,7 @@ Estos gráficos fueron utilizados para interpretar qué indicadores ambientales 
 
 ---
 
-### 9.5 Tabla y gráfico de ranking de impactos
+## 9.5 Tabla y gráfico de ranking de impactos
 
 
 Se generó un ranking de las categorías ambientales según su nivel de contribución dentro de cada instalación.
@@ -1545,7 +1545,7 @@ Este resultado permitió complementar los gráficos individuales mediante una vi
 
 ---
 
-### 9.6 Análisis visual de categorías críticas
+## 9.6 Análisis visual de categorías críticas
 
 
 A partir de los gráficos generados se identificaron las categorías ambientales con mayor influencia dentro del sistema evaluado.
@@ -1565,7 +1565,7 @@ Estas visualizaciones permitieron relacionar los valores cuantitativos obtenidos
 
 ---
 
-### 9.7 Comparación final de desempeño ambiental
+## 9.7 Comparación final de desempeño ambiental
 
 
 Se generó una representación gráfica consolidada para comparar el desempeño ambiental global de ambas instalaciones.
@@ -1585,7 +1585,7 @@ Esta comparación gráfica fue utilizada como elemento integrador para relaciona
 
 ---
 
-### 9.8 Interpretación de resultados gráficos
+## 9.8 Interpretación de resultados gráficos
 
 
 Los gráficos obtenidos fueron analizados considerando la diferencia de comportamiento ambiental entre ambas instalaciones.
@@ -1605,7 +1605,7 @@ El uso combinado de tablas y gráficos permitió obtener una visión completa de
 
 ---
 
-### 9.9 Síntesis gráfica de hallazgos principales
+## 9.9 Síntesis gráfica de hallazgos principales
 
 
 Finalmente se consolidaron los principales resultados mediante elementos gráficos de resumen.
@@ -1625,7 +1625,7 @@ Esta etapa permitió transformar los resultados obtenidos en conclusiones visual
 
 ---
 
-### 9.10 Conclusiones derivadas del análisis gráfico
+## 9.10 Conclusiones derivadas del análisis gráfico
 
 
 Los resultados visualizados permitieron establecer una relación directa entre los indicadores calculados y el comportamiento ambiental observado.
@@ -1645,7 +1645,7 @@ Las conclusiones fueron obtenidas a partir de la combinación de resultados num�
 
 ---
 
-### 9.11 Exportación y organización de resultados gráficos
+## 9.11 Exportación y organización de resultados gráficos
 
 
 Los gráficos generados fueron organizados junto con las tablas de resultados para facilitar su revisión y comparación.
@@ -1665,7 +1665,7 @@ La integración de estos elementos permitió disponer de una presentación compl
 
 ---
 
-### 9.12 Relación entre resultados numéricos y gráficos
+## 9.12 Relación entre resultados numéricos y gráficos
 
 
 Los gráficos fueron utilizados como complemento directo de los valores calculados durante el análisis comparativo.
@@ -1685,7 +1685,7 @@ Esta relación permitió verificar que las representaciones gráficas reflejaran
 
 ---
 
-### 9.13 Documentación de figuras generadas
+## 9.13 Documentación de figuras generadas
 
 
 Cada gráfico generado fue asociado al indicador ambiental correspondiente para mantener la trazabilidad del análisis.
@@ -1705,7 +1705,7 @@ Esta organización permitió relacionar cada figura con los resultados específi
 
 ---
 
-### 9.14 Integración de resultados en el informe final
+## 9.14 Integración de resultados en el informe final
 
 
 Las figuras generadas fueron incorporadas como evidencia gráfica del análisis comparativo realizado.
@@ -1725,7 +1725,7 @@ Esta estructura permite que el lector pueda relacionar directamente los resultad
 
 ---
 
-### 9.15 Validación visual de resultados
+## 9.15 Validación visual de resultados
 
 
 La revisión de los gráficos permitió validar la coherencia entre los cálculos realizados y las tendencias observadas.
@@ -1745,7 +1745,7 @@ Esta etapa permitió asegurar que las conclusiones obtenidas estuvieran respalda
 
 ---
 
-### 9.16 Presentación consolidada del análisis ACV
+## 9.16 Presentación consolidada del análisis ACV
 
 
 La sección gráfica final reúne los principales resultados obtenidos durante la comparación ambiental entre Cerceda y Vedra.
@@ -1765,7 +1765,7 @@ Esta consolidación permite disponer de una visión integrada del análisis real
 
 ---
 
-### 9.17 Cierre del análisis gráfico comparativo
+## 9.17 Cierre del análisis gráfico comparativo
 
 
 La etapa final del análisis integró las diferentes visualizaciones generadas para obtener una interpretación global del comportamiento ambiental.
@@ -1785,7 +1785,7 @@ Los gráficos desarrollados permitieron respaldar las conclusiones obtenidas a p
 
 ---
 
-### 9.18 Conclusión de la sección de resultados visuales
+## 9.18 Conclusión de la sección de resultados visuales
 
 
 La representación gráfica permitió resumir los principales comportamientos identificados durante el análisis comparativo.
@@ -1805,7 +1805,7 @@ Con esta etapa se completa la transformación de los datos originales del ACV en
 
 ---
 
-### 9.19 Consideraciones finales del análisis
+## 9.19 Consideraciones finales del análisis
 
 
 El conjunto de gráficos desarrollados permitió representar de forma integrada los resultados obtenidos desde el modelo ACV.
@@ -1825,7 +1825,7 @@ Los resultados gráficos constituyen la evidencia visual del análisis realizado
 
 ---
 
-### 9.20 Organización final de resultados del análisis
+## 9.20 Organización final de resultados del análisis
 
 
 Los resultados obtenidos fueron estructurados para mantener una relación directa entre datos procesados, cálculos realizados y representaciones gráficas.
@@ -1845,7 +1845,7 @@ Esta organización permite seguir el flujo completo del análisis realizado, des
 
 ---
 
-### 9.21 Resumen de indicadores evaluados
+## 9.21 Resumen de indicadores evaluados
 
 
 Los resultados gráficos fueron organizados considerando los principales indicadores ambientales obtenidos desde el análisis ACV.
@@ -1865,7 +1865,7 @@ La información representada permitió generar una visión resumida del desempe�
 
 ---
 
-### 9.22 Criterios utilizados para la interpretación gráfica
+## 9.22 Criterios utilizados para la interpretación gráfica
 
 
 La interpretación de los gráficos se realizó considerando la magnitud de los impactos y las diferencias observadas entre instalaciones.
@@ -1885,7 +1885,7 @@ Estos criterios permitieron transformar los resultados gráficos en información
 
 ---
 
-## 10. Conclusiones del análisis ACV
+# 10. Conclusiones del análisis ACV
 
 
 El análisis comparativo permitió determinar las diferencias ambientales entre las instalaciones evaluadas.
@@ -1992,7 +1992,7 @@ Los resultados obtenidos permiten establecer una base técnica para evaluar futu
 
 ---
 
-## 11. Limitaciones del análisis
+# 11. Limitaciones del análisis
 
 
 El análisis desarrollado considera ciertas limitaciones asociadas a la información disponible y al alcance definido para la evaluación.
@@ -2029,7 +2029,7 @@ La incorporación de información adicional permitirá aumentar la confiabilidad
 
 ---
 
-## 12. Trabajo futuro y mejoras propuestas
+# 12. Trabajo futuro y mejoras propuestas
 
 
 A partir de los resultados obtenidos se identifican oportunidades para continuar profundizando el análisis ambiental.
@@ -2066,7 +2066,7 @@ Estas acciones permitirán transformar el análisis realizado en una herramienta
 
 ---
 
-## 13. Cierre del análisis
+# 13. Cierre del análisis
 
 
 El desarrollo del análisis permitió establecer una metodología estructurada para comparar el desempeño ambiental de las instalaciones evaluadas.
@@ -2086,7 +2086,7 @@ El trabajo realizado entrega una base técnica para futuras evaluaciones y proce
 
 ---
 
-## 14. Estructura final del proyecto
+# 14. Estructura final del proyecto
 
 
 El análisis desarrollado queda organizado mediante una estructura que permite revisar cada etapa del proceso.
@@ -2106,7 +2106,7 @@ Esta estructura facilita la trazabilidad del estudio y permite reutilizar la met
 
 ---
 
-## 15. Reproducibilidad del análisis
+# 15. Reproducibilidad del análisis
 
 
 La metodología aplicada permite reproducir el análisis utilizando los mismos datos de entrada y procedimientos definidos.
@@ -2126,7 +2126,7 @@ Esto permite mantener consistencia entre evaluaciones futuras y facilitar la act
 
 ---
 
-## 16. Conclusión general del proyecto
+# 16. Conclusión general del proyecto
 
 
 El desarrollo realizado permitió integrar análisis ambiental, procesamiento de datos y generación de resultados comparativos en una estructura organizada.
@@ -2146,7 +2146,7 @@ La información generada permite continuar con evaluaciones ambientales orientad
 
 ---
 
-## 17. Consideraciones finales
+# 17. Consideraciones finales
 
 
 El análisis desarrollado permite disponer de una visión consolidada del desempeño ambiental de las instalaciones evaluadas.
@@ -2166,7 +2166,7 @@ El proyecto queda preparado para incorporar nuevas evaluaciones o ampliar el an�
 
 ---
 
-## 18. Referencias y documentación asociada
+# 18. Referencias y documentación asociada
 
 
 La documentación generada durante el proyecto permite respaldar los resultados obtenidos y facilitar la revisión del análisis.
@@ -2186,7 +2186,7 @@ Esta organización permite mantener una relación clara entre la información ut
 
 ---
 
-## 19. Estado final del análisis
+# 19. Estado final del análisis
 
 
 El proyecto queda documentado con las etapas principales del estudio ambiental desarrollado.
@@ -2207,7 +2207,7 @@ Con esta estructura se dispone de un documento técnico organizado, trazable y p
 ---
 
 
-## 20. Cierre documental
+# 20. Cierre documental
 
 
 La documentación generada resume el desarrollo completo del análisis ambiental realizado.
@@ -2227,7 +2227,7 @@ Con esto se finaliza la estructura del análisis, manteniendo una organización 
 
 ---
 
-## 21. Cierre final del proyecto
+# 21. Cierre final del proyecto
 
 
 El análisis desarrollado permitió consolidar una evaluación ambiental comparativa basada en datos, procesamiento reproducible y análisis técnico.
