@@ -311,6 +311,7 @@ Generación automática de tablas y figuras
         │
         ▼
 Interpretación ambiental de resultados
+```
 
 La metodología fue definida para garantizar que cada resultado generado pueda ser asociado con una fuente de información y una etapa específica del procesamiento.
 
