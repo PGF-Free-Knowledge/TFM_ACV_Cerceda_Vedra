@@ -1376,7 +1376,7 @@ Este procedimiento permitió reducir errores asociados al procesamiento manual y
 
 ---
 
- 8. Resultados del análisis comparativo
+# 8. Resultados del análisis comparativo
 
 
 Los resultados obtenidos fueron organizados mediante tablas resumen para facilitar la comparación entre Cerceda y Vedra.
