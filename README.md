@@ -1,99 +1,123 @@
-# Análisis Comparativo de Impactos Ambientales mediante ACV
+# Análisis Comparativo de Impactos Ambientales mediante Análisis de Ciclo de Vida (ACV)
 
-## Automatización, procesamiento y visualización reproducible mediante Python
+<p align="center">
+<img src="assets/banner_TFM_Ian.jpg" width="100%">
+</p>
+
+## Evaluación comparativa de las EDAR Cerceda y Vedra mediante procesamiento reproducible en Python
+
+![Análisis ACV](figuras/Figura_Final_ACV.png)
 
 ---
 
-## Descripción del proyecto
+# 1. Introducción
 
-Este repositorio contiene el desarrollo computacional utilizado para el análisis comparativo de impactos ambientales mediante **Análisis de Ciclo de Vida (ACV)** entre las plantas de **Cerceda y Vedra**.
+La gestión sostenible del ciclo integral del agua constituye uno de los principales desafíos ambientales asociados al desarrollo urbano e industrial. Dentro de este contexto, las Estaciones Depuradoras de Aguas Residuales (EDAR) representan instalaciones estratégicas debido a su función en la reducción de contaminantes y protección de los ecosistemas receptores.
 
-El proyecto tiene como finalidad transformar los resultados obtenidos desde un software de ACV en información analítica y gráfica reproducible mediante Python, permitiendo:
+Este repositorio documenta el desarrollo computacional realizado para la evaluación comparativa de impactos ambientales asociados a dos instalaciones de tratamiento de aguas residuales:
 
-- procesar automáticamente los resultados ambientales;
-- comparar cuantitativamente ambas alternativas;
+- **EDAR Cerceda**
+- **EDAR Vedra**
+
+ubicadas en Galicia, España.
+
+El análisis se desarrolla dentro del marco metodológico del **Análisis de Ciclo de Vida (ACV)**, utilizando indicadores ambientales normalizados obtenidos a partir de los resultados generados por el modelo ACV.
+
+---
+
+# 2. Contexto del estudio
+
+## Espina & Delfín
+
+[Espina & Delfín](https://www.espinaydelfin.com/) es una empresa especializada en la gestión integral del ciclo del agua, incluyendo actividades relacionadas con:
+
+- abastecimiento;
+- saneamiento;
+- depuración de aguas residuales;
+- operación y mantenimiento de infraestructuras hidráulicas;
+- gestión de servicios municipales.
+
+Dentro de sus actividades se encuentran instalaciones vinculadas al tratamiento de aguas residuales, entre ellas la EDAR Cerceda.
+
+Este proyecto utiliza los resultados ambientales asociados a las plantas Cerceda y Vedra como caso de estudio para desarrollar una metodología reproducible de comparación ambiental.
+
+---
+
+# 3. Objetivo del proyecto
+
+El objetivo principal es desarrollar un flujo computacional reproducible que permita transformar resultados ACV en información analítica y gráfica para apoyar la interpretación ambiental.
+
+Los objetivos específicos son:
+
+- automatizar la lectura de resultados provenientes de ACV;
+- procesar indicadores ambientales normalizados;
+- comparar cuantitativamente dos alternativas;
 - calcular diferencias relativas entre plantas;
-- identificar categorías ambientales dominantes;
-- generar tablas comparativas;
-- producir figuras con calidad adecuada para un documento académico.
-
-El desarrollo surge con el propósito de reemplazar la elaboración manual de gráficos mediante Microsoft Excel por un flujo automatizado, reproducible y fácilmente actualizable.
+- identificar categorías ambientales críticas;
+- evaluar contribuciones porcentuales;
+- generar tablas y figuras listas para documentación académica.
 
 ---
 
-# Objetivo
+# 4. Metodología general
 
-El objetivo principal es desarrollar una metodología computacional que permita analizar y representar resultados de ACV mediante Python.
-
-El sistema desarrollado permite:
-
-- leer automáticamente los resultados exportados desde el software de ACV;
-- extraer indicadores ambientales normalizados;
-- comparar Cerceda frente a Vedra;
-- calcular relaciones relativas entre impactos;
-- determinar diferencias de orden de magnitud;
-- evaluar la contribución porcentual de cada categoría;
-- generar tablas y figuras automáticamente.
-
----
-
-# Flujo general del análisis
-
-El procesamiento desarrollado sigue la siguiente secuencia:
+El análisis desarrollado considera las siguientes etapas:
 
 ```
-Resultados ACV (Excel)
-          │
-          ▼
+Resultados ACV
+      │
+      ▼
+Archivo Excel de resultados
+      │
+      ▼
 Lectura automática mediante Python
-          │
-          ▼
+      │
+      ▼
 Extracción de indicadores ambientales
-          │
-          ▼
-Procesamiento y normalización
-          │
-          ▼
-Comparación Cerceda - Vedra
-          │
-          ▼
-Cálculo de ratios y diferencias logarítmicas
-          │
-          ▼
-Análisis de contribución
-          │
-          ▼
-Generación de tablas y figuras
+      │
+      ▼
+Procesamiento y estructuración de datos
+      │
+      ▼
+Comparación Cerceda vs Vedra
+      │
+      ▼
+Análisis relativo y contribución
+      │
+      ▼
+Generación automática de tablas y figuras
 ```
 
 ---
 
-# Datos de entrada
+# 5. Datos utilizados
 
-El archivo principal utilizado como fuente de información es:
+## Archivo de entrada
 
 ```
 data/resultados.xlsx
 ```
 
-La hoja analizada corresponde a:
+## Hoja analizada
 
 ```
 Evaluación de Impactos
 ```
 
-Los datos corresponden a los impactos ambientales normalizados obtenidos para:
+Los datos corresponden a impactos ambientales normalizados para:
 
-- Planta Cerceda
-- Planta Vedra
+| Planta | Localización |
+|---|---|
+| Cerceda | Galicia, España |
+| Vedra | Galicia, España |
 
 ---
 
-# Categorías ambientales evaluadas
+# 6. Categorías ambientales evaluadas
 
 El análisis considera las siguientes categorías:
 
-| Código | Categoría ambiental |
+| Código | Categoría |
 |---|---|
 | GWP | Global Warming Potential |
 | FEU | Freshwater Ecotoxicity |
@@ -103,41 +127,22 @@ El análisis considera las siguientes categorías:
 | MET | Marine Ecotoxicity |
 | WU | Water Use |
 
-Los indicadores fueron analizados utilizando dos unidades normalizadas:
+Los resultados fueron evaluados utilizando:
 
 - HabEq
 - kg PO4 eq
 
 ---
 
-# Metodología desarrollada
+# 7. Desarrollo computacional
 
-Durante el desarrollo se evaluaron diferentes alternativas de representación gráfica con el objetivo de seleccionar la forma más adecuada para interpretar los resultados del ACV.
+El procesamiento fue desarrollado utilizando Python mediante una arquitectura modular.
 
-Las alternativas consideradas fueron:
-
-- gráficos de barras verticales;
-- gráficos de barras horizontales;
-- gráficos tipo Lollipop;
-- perfiles relativos normalizados;
-- comparación mediante escala logarítmica;
-- figuras compuestas con múltiples paneles.
-
-Cada alternativa fue evaluada considerando:
-
-- claridad visual;
-- facilidad de interpretación;
-- comparación entre plantas;
-- utilidad dentro del capítulo de Resultados y Discusión del TFM.
-
----
-
-# Procesamiento mediante Python
-
-El proyecto fue desarrollado mediante una estructura modular:
+## Estructura del proyecto
 
 ```
 TFM_ACV_Cerceda_Vedra
+
 │
 ├── data
 │   └── resultados.xlsx
@@ -148,7 +153,7 @@ TFM_ACV_Cerceda_Vedra
 │   └── interpretacion.md
 │
 ├── figuras
-│   └── figuras generadas automáticamente
+│   └── resultados gráficos
 │
 ├── resultados
 │   └── tablas y análisis exportados
@@ -159,7 +164,7 @@ TFM_ACV_Cerceda_Vedra
 │   ├── analisis_acv.py
 │   ├── analisis_contribucion.py
 │   ├── tabla_comparativa.py
-│   └── generación de figuras
+│   └── figura_final_acv.py
 │
 ├── graficos_acv.py
 ├── requirements.txt
@@ -168,133 +173,193 @@ TFM_ACV_Cerceda_Vedra
 
 ---
 
-# Análisis comparativo de impactos
+# 8. Procesamiento de datos
 
-Para cada categoría ambiental se calcularon:
+## Lectura automática
 
-## Ratio relativo
+Archivo:
+
+```
+src/lector_excel.py
+```
+
+Funciones principales:
+
+- validación del archivo fuente;
+- lectura de hojas Excel;
+- carga estructurada mediante pandas.
+
+
+---
+
+## Preparación de indicadores
+
+Archivo:
+
+```
+src/procesador.py
+```
+
+Funciones:
+
+- extracción de categorías ambientales;
+- separación por planta;
+- preparación de vectores comparativos.
+
+---
+
+# 9. Evaluación comparativa
+
+Para cuantificar las diferencias entre plantas se calcularon indicadores relativos.
+
+## Ratio Cerceda/Vedra
 
 \[
-Ratio=\frac{Cerceda}{Vedra}
+R_i =
+\frac{Impacto_{Cerceda}}
+{Impacto_{Vedra}}
 \]
 
-permitiendo determinar cuántas veces un impacto es superior entre ambas plantas.
 
+Interpretación:
 
-## Diferencia logarítmica
+| Ratio | Interpretación |
+|-|-|
+| R ≈ 1 | impactos similares |
+| R > 1 | mayor impacto Cerceda |
+| R < 1 | mayor impacto Vedra |
+
+---
+
+## Diferencia de orden de magnitud
+
+Para comparar diferencias elevadas se utilizó:
 
 \[
-Diferencia=\log_{10}\left(\frac{Cerceda}{Vedra}\right)
+D_i = log_{10}(R_i)
 \]
 
-Esta representación permite comparar diferencias de varios órdenes de magnitud.
+Esta transformación permite representar diferencias desde una escala relativa independiente de la magnitud absoluta.
 
 ---
 
-# Resultados principales
+# 10. Análisis de contribución
 
-El análisis muestra diferencias significativas entre ambas plantas.
+Además de la comparación directa, se realizó un análisis de contribución ambiental.
 
-Las categorías con mayor diferencia relativa corresponden a:
+El objetivo fue identificar:
 
-## Freshwater Ecotoxicity (FET)
+- categorías dominantes;
+- principales fuentes de impacto;
+- oportunidades de mejora ambiental.
 
-Para HabEq:
+Ejemplo:
 
-```
-Cerceda / Vedra ≈ 94,9 veces
-```
-
-Para kg PO4 eq:
-
-```
-Cerceda / Vedra ≈ 344 veces
-```
-
-
-## Marine Ecotoxicity (MET)
-
-Para HabEq:
-
-```
-Cerceda / Vedra ≈ 92,5 veces
-```
-
-Para kg PO4 eq:
-
-```
-Cerceda / Vedra ≈ 336 veces
-```
-
-Estas categorías representan los principales factores diferenciadores del sistema analizado.
+![Contribución Cerceda](figuras/Ranking_Cerceda_HabEq.png)
 
 ---
 
-# Análisis de contribución
+# 11. Resultados principales
 
-Además de la comparación directa, se realizó un análisis de contribución para identificar qué categorías tienen mayor participación dentro del impacto total.
+El análisis comparativo muestra diferencias significativas entre ambas instalaciones.
 
-Los resultados muestran que:
+Las categorías con mayor diferenciación corresponden principalmente a:
 
-- FET constituye la principal contribución en ambas plantas.
-- MET corresponde a la segunda categoría dominante.
-- FEU presenta una contribución relevante especialmente en Vedra.
-- Las categorías GWP y TET presentan menor participación relativa.
+## FET
+
+Cerceda/Vedra:
+
+- HabEq:
+
+```
+≈ 94,9 veces
+```
+
+- kg PO4 eq:
+
+```
+≈ 344 veces
+```
+
+
+## MET
+
+Cerceda/Vedra:
+
+- HabEq:
+
+```
+≈ 92,5 veces
+```
+
+- kg PO4 eq:
+
+```
+≈ 336 veces
+```
+
+Estos resultados identifican a FET y MET como categorías ambientales críticas dentro del sistema evaluado.
 
 ---
 
-# Figuras generadas
+# 12. Visualización de resultados
 
-El proyecto genera automáticamente figuras listas para incorporarse al documento académico.
+## Comparación general de impactos
+
+![Impactos normalizados](figuras/Figura_Final_ACV.png)
 
 
-## Comparación HabEq
+---
+
+## Comparación relativa HabEq
 
 ![Comparación HabEq](figuras/Figura_Final_Comparacion_HabEq.png)
 
 
-## Comparación kg PO4 eq
+---
 
-![Comparación kg PO4 eq](figuras/Figura_Final_Comparacion_KgPO4Eq.png)
+## Comparación relativa kg PO4 eq
 
+![Comparación KgPO4](figuras/Figura_Final_Comparacion_KgPO4Eq.png)
 
-## Ranking de contribuciones
-
-![Ranking Cerceda HabEq](figuras/Ranking_Cerceda_HabEq.png)
 
 ---
 
-# Tablas generadas
+# 13. Resultados generados
 
 El sistema genera automáticamente:
 
-- tablas comparativas ACV;
-- ratios Cerceda/Vedra;
-- diferencias logarítmicas;
-- análisis de contribución porcentual.
-
-Los resultados se almacenan en:
-
 ```
 resultados/
+
+├── resumen_acv.txt
+│
+├── tabla_final_comparativa_HabEq.xlsx
+│
+├── tabla_final_comparativa_KgPO4Eq.xlsx
+│
+├── análisis de contribución
+│
+└── archivos CSV
 ```
 
-incluyendo formatos:
+Los resultados contienen:
 
-- Excel (.xlsx)
-- CSV
-- TXT
+- valores normalizados;
+- ratios comparativos;
+- diferencias logarítmicas;
+- interpretación automática.
 
 ---
 
-# Software utilizado
+# 14. Software utilizado
 
-Lenguaje:
+## Lenguaje
 
-- Python 3.x
+Python 3.x
 
 
-Bibliotecas principales:
+## Librerías principales
 
 - pandas
 - numpy
@@ -302,7 +367,7 @@ Bibliotecas principales:
 - openpyxl
 
 
-Instalación de dependencias:
+Instalación:
 
 ```bash
 pip install -r requirements.txt
@@ -310,40 +375,59 @@ pip install -r requirements.txt
 
 ---
 
-# Reproducibilidad
+# 15. Reproducibilidad
 
-Para actualizar el análisis únicamente es necesario reemplazar:
+Para ejecutar nuevamente el análisis:
+
+Actualizar:
 
 ```
 data/resultados.xlsx
 ```
 
-y ejecutar:
+Ejecutar:
 
 ```bash
-python graficos_acv.py
+python -m src.analisis_acv
+
+python -m src.analisis_contribucion
+
+python -m src.tabla_comparativa
+
+python -m src.figura_final_acv
 ```
 
-Los módulos de procesamiento permiten regenerar:
+El flujo permite regenerar automáticamente:
 
-- análisis comparativos;
 - tablas;
+- indicadores;
 - figuras;
-- resultados estadísticos.
-
-Manteniendo siempre el mismo formato gráfico y estructura metodológica.
+- resultados comparativos.
 
 ---
 
-# Conclusión
+# 16. Conclusiones
 
-El desarrollo permitió transformar un proceso manual de generación de gráficos ACV en un flujo automatizado, reproducible y documentado mediante Python.
+El desarrollo permitió transformar un proceso inicialmente basado en procesamiento manual en una metodología automatizada, reproducible y trazable.
 
-Además de reducir tiempos de elaboración, la metodología implementada permitió:
+La herramienta desarrollada permite:
 
-- mejorar la trazabilidad del análisis;
-- disminuir errores asociados a procesamiento manual;
-- comparar alternativas ambientales de forma cuantitativa;
-- facilitar la interpretación de resultados dentro del Trabajo Fin de Máster.
+- mejorar la gestión de datos ambientales;
+- reducir errores asociados al procesamiento manual;
+- comparar instalaciones mediante indicadores homogéneos;
+- identificar categorías ambientales críticas;
+- generar documentación técnica reproducible.
 
-El repositorio constituye una herramienta reproducible para el análisis comparativo de impactos ambientales mediante ACV.
+Este repositorio constituye una base computacional para el análisis comparativo de sostenibilidad ambiental aplicado a instalaciones de tratamiento de aguas residuales mediante metodología ACV.
+
+---
+
+# Autor
+
+Ian Thomas Gálvez Zamora
+
+Trabajo Fin de Máster
+
+Análisis de impactos ambientales mediante ACV
+
+Repositorio desarrollado con Python y GitHub.
