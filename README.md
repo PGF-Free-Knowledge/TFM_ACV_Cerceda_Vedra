@@ -293,8 +293,6 @@ Extracción de indicadores ambientales
         │
         ▼
 Procesamiento y estructuración de datos
-
-```text
         │
         ▼
 Separación de datos por instalación
