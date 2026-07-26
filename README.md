@@ -1,7 +1,7 @@
 # Análisis Comparativo de Impactos Ambientales mediante Análisis de Ciclo de Vida (ACV)
 
 <p align="center">
-<img src="assets/banner_TFM_Ian.jpg" width="100%">
+<img src="assets/banner_TFM_Ian.png" width="100%">
 </p>
 
 ## Evaluación comparativa de las EDAR Cerceda y Vedra mediante procesamiento reproducible en Python
