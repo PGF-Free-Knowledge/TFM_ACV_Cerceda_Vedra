@@ -1,0 +1,26 @@
+
+============================
+Unidad: HabEq
+============================
+
+Categoría  Cerceda (HabEq)  Vedra (HabEq)  Ratio Cerceda/Vedra  log10 Ratio      Interpretación
+      GWP         0.000525       0.000156             3.361416     0.526522       Cerceda mayor
+      FEU         0.014255       0.000682            20.900934     1.320166 Cerceda mucho mayor
+      MEU         0.002067       0.000258             8.017188     0.904022       Cerceda mayor
+      TET         0.000160       0.000083             1.938631     0.287495             Similar
+      FET         0.100950       0.001064            94.905873     1.977293 Cerceda mucho mayor
+      MET         0.074336       0.000804            92.498004     1.966132 Cerceda mucho mayor
+       WU        -0.000004       0.000026            -0.167730    -0.775388         Vedra mayor
+
+============================
+Unidad: KgPO4Eq
+============================
+
+Categoría  Cerceda (KgPO4Eq)  Vedra (KgPO4Eq)  Ratio Cerceda/Vedra  log10 Ratio      Interpretación
+      GWP           0.062457         0.005172            12.075538     1.081906 Cerceda mucho mayor
+      FEU           1.714739         0.022813            75.165232     1.876017 Cerceda mucho mayor
+      MEU           0.248699         0.008552            29.081120     1.463611 Cerceda mucho mayor
+      TET           0.019311         0.002746             7.031209     0.847030       Cerceda mayor
+      FET          12.147101         0.035268           344.426143     2.537096 Cerceda mucho mayor
+      MET           8.944651         0.026645           335.696854     2.525947 Cerceda mucho mayor
+       WU          -0.000515         0.000847            -0.607787    -0.216249         Vedra mayor
