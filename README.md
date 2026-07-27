@@ -35,6 +35,7 @@ Ian Thomas Gálvez Zamora
 - [4. Alcance del desarrollo](#4-alcance-del-desarrollo)
 - [5. Metodología general del análisis](#5-metodología-general-del-análisis)
 - [6. Resultados del análisis comparativo](#6-resultados-del-análisis-comparativo)
+- [7. Conclusiones del análisis comparativo](#7-conclusiones-del-análisis-comparativo)
 
 
 ---
