@@ -1158,37 +1158,78 @@ Este análisis permite identificar diferencias específicas entre instalaciones 
 
 ### Interpretación
 
-Los rankings permiten ordenar las categorías ambientales según su contribución relativa dentro del sistema evaluado.
+Los gráficos de ranking permiten establecer una jerarquización de las categorías ambientales según su contribución relativa dentro del sistema evaluado.
 
-Esta representación facilita identificar:
+A diferencia de una comparación individual de indicadores, el ranking proporciona una visión global de cuáles son los aspectos ambientales que presentan mayor influencia en cada instalación, facilitando la identificación de prioridades dentro del análisis ACV.
 
-- categorías ambientales dominantes;
-- principales fuentes de impacto;
-- diferencias entre Cerceda y Vedra.
+Esta representación permite identificar:
 
-El análisis permite establecer prioridades para futuras estrategias de mejora ambiental.
+- categorías ambientales dominantes dentro del desempeño global;
+- principales fuentes de contribución al impacto ambiental;
+- diferencias en la distribución de impactos entre EDAR Cerceda y EDAR Vedra;
+- posibles áreas donde concentrar estrategias de mejora ambiental.
+
+El análisis comparativo de los rankings permite observar que la importancia relativa de cada categoría puede variar entre instalaciones, evidenciando que el comportamiento ambiental depende de las características específicas del sistema evaluado, incluyendo condiciones operacionales, procesos involucrados y gestión de recursos.
+
+Desde una perspectiva de toma de decisiones, esta información resulta relevante porque permite orientar acciones de optimización hacia aquellos aspectos con mayor influencia ambiental, evitando enfocar esfuerzos en categorías con una contribución menor.
+
+Por tanto, los rankings constituyen una herramienta complementaria dentro del análisis ACV, ya que facilitan la interpretación de resultados complejos y permiten transformar múltiples indicadores ambientales en criterios de priorización técnica.
 
 ---
 
 ## 6.5 Síntesis de resultados gráficos
 
-La integración de las diferentes representaciones gráficas permite transformar resultados ACV complejos en información visual interpretable.
+La integración de las diferentes representaciones gráficas permite transformar resultados ACV complejos en información visual interpretable y orientada al análisis comparativo.
 
-Los principales resultados obtenidos permiten:
+El conjunto de gráficos desarrollados permite evaluar el comportamiento ambiental de EDAR Cerceda y EDAR Vedra desde diferentes perspectivas:
 
-- comparar objetivamente EDAR Cerceda y EDAR Vedra;
+- comparación global de impactos;
+- análisis de indicadores normalizados;
+- evaluación de diferencias relativas;
+- identificación de categorías dominantes;
+- priorización mediante rankings ambientales.
+
+Los principales aportes del análisis gráfico son:
+
+- comparar objetivamente el desempeño ambiental entre instalaciones;
 - identificar categorías ambientales críticas;
-- analizar diferencias relativas entre instalaciones;
-- facilitar la comunicación de resultados técnicos.
+- reconocer patrones diferenciadores entre alternativas;
+- facilitar la interpretación de resultados provenientes del modelo ACV;
+- apoyar la comunicación técnica de los resultados obtenidos.
 
-La generación automática de figuras mediante Python garantiza trazabilidad, reproducibilidad y consistencia en la presentación de resultados.
+La generación automática de figuras mediante Python permite mantener trazabilidad entre los datos procesados, los cálculos realizados y los resultados visualizados, asegurando reproducibilidad y consistencia durante el análisis.
+
+En conjunto, los resultados gráficos proporcionan una visión integrada del comportamiento ambiental de ambas instalaciones y constituyen una herramienta de apoyo para futuras evaluaciones, procesos de mejora y toma de decisiones orientadas hacia una gestión más sostenible del ciclo del agua.
 
 ---
 
 # 7. Conclusiones del análisis comparativo
 
-El análisis desarrollado permitió integrar metodología ACV, procesamiento computacional y visualización gráfica para evaluar comparativamente dos instalaciones de tratamiento de aguas residuales.
+El presente desarrollo permitió transformar los resultados obtenidos mediante el modelo de Análisis de Ciclo de Vida (ACV) en información estructurada, cuantificable y visualmente interpretable mediante herramientas de programación científica en Python.
 
-Los resultados gráficos permiten comprender el comportamiento ambiental de cada alternativa, identificar categorías relevantes y establecer diferencias entre sistemas evaluados.
+La metodología implementada permitió establecer un flujo reproducible para la comparación ambiental entre las instalaciones EDAR Cerceda y EDAR Vedra, integrando extracción de datos, procesamiento matemático, generación automática de indicadores y representación gráfica de resultados.
 
-La metodología implementada proporciona una base reproducible para futuros estudios ambientales mediante herramientas de análisis de datos y programación científica.
+Los resultados obtenidos mediante las diferentes visualizaciones permitieron identificar diferencias en el comportamiento ambiental de ambas instalaciones, facilitando el análisis de categorías con mayor contribución y la evaluación comparativa del desempeño ambiental.
+
+El desarrollo gráfico permitió:
+
+- transformar resultados ACV complejos en información comprensible;
+- identificar categorías ambientales dominantes;
+- analizar diferencias relativas entre instalaciones;
+- facilitar la interpretación de indicadores ambientales;
+- apoyar la identificación de oportunidades de mejora.
+
+La utilización de indicadores normalizados como HabEq y KgPO₄Eq permitió realizar comparaciones bajo criterios homogéneos, reduciendo la dificultad asociada a la interpretación de múltiples categorías ambientales con diferentes unidades de medida.
+
+Desde el punto de vista metodológico, la automatización desarrollada mediante Python representa una mejora significativa respecto al procesamiento manual de resultados, permitiendo:
+
+- reducir errores asociados a la manipulación de datos;
+- aumentar la trazabilidad de los cálculos realizados;
+- facilitar la actualización del análisis frente a nuevos escenarios;
+- mantener una estructura reproducible y escalable.
+
+La arquitectura desarrollada permite que la metodología aplicada pueda ser extendida hacia nuevas instalaciones, diferentes escenarios operacionales o futuras evaluaciones ambientales, manteniendo la misma lógica de procesamiento y análisis.
+
+En este sentido, el proyecto no solo entrega una comparación puntual entre EDAR Cerceda y EDAR Vedra, sino que establece una herramienta computacional orientada al análisis ambiental basado en datos, integrando fundamentos de ACV, programación científica y visualización avanzada.
+
+Finalmente, los resultados obtenidos demuestran el valor de combinar metodologías ambientales tradicionales con herramientas digitales de procesamiento, permitiendo generar análisis más transparentes, reproducibles y útiles para apoyar procesos de toma de decisiones orientados hacia una gestión sostenible del ciclo del agua.
