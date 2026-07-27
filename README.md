@@ -1052,17 +1052,35 @@ El análisis gráfico permite identificar diferencias entre instalaciones, categ
 
 ### Interpretación
 
-La figura presenta una visión global de los impactos ambientales obtenidos mediante el análisis de ciclo de vida para las instalaciones EDAR Cerceda y EDAR Vedra.
+La figura presenta una visión global del comportamiento ambiental asociado a las instalaciones EDAR Cerceda y EDAR Vedra, utilizando los resultados obtenidos mediante el modelo de Análisis de Ciclo de Vida (ACV).
 
-La representación permite observar el comportamiento comparativo de ambas instalaciones considerando las categorías ambientales evaluadas.
+Esta representación constituye el primer nivel de análisis comparativo, ya que permite observar de manera integrada la respuesta ambiental de ambas instalaciones considerando simultáneamente las diferentes categorías de impacto evaluadas.
 
-Los resultados permiten identificar:
+La comparación global permite identificar patrones generales de comportamiento y determinar si existen diferencias significativas entre ambos sistemas de tratamiento.
 
-- diferencias generales entre instalaciones;
-- categorías con mayores contribuciones ambientales;
-- tendencias de comportamiento entre alternativas.
+Los resultados obtenidos permiten analizar:
 
-Esta comparación constituye la primera aproximación para interpretar las diferencias ambientales obtenidas mediante el modelo ACV.
+- diferencias globales de desempeño ambiental entre instalaciones;
+- categorías donde una instalación presenta mayores contribuciones;
+- similitudes en el comportamiento ambiental de ambos sistemas;
+- tendencias generales asociadas al funcionamiento de cada alternativa.
+
+Desde una perspectiva de evaluación ambiental, esta primera comparación resulta fundamental porque permite establecer una visión inicial del sistema antes de realizar análisis específicos por categoría.
+
+Las diferencias observadas entre EDAR Cerceda y EDAR Vedra pueden estar relacionadas con múltiples factores asociados al funcionamiento de las instalaciones, tales como:
+
+- características del proceso de tratamiento utilizado;
+- condiciones operacionales;
+- consumos energéticos asociados;
+- requerimientos de materiales e insumos;
+- generación y gestión de subproductos;
+- eficiencia de los procesos involucrados.
+
+Por esta razón, la interpretación de los resultados globales debe complementarse posteriormente con análisis específicos de indicadores normalizados y rankings de contribución, permitiendo identificar con mayor precisión cuáles son los factores responsables de las diferencias observadas.
+
+La representación gráfica generada facilita la transformación de resultados ACV complejos en información visual comprensible, permitiendo establecer una primera comparación objetiva entre alternativas y proporcionando una base para la interpretación detallada de los impactos ambientales.
+
+En este sentido, la comparación global representa una herramienta inicial para orientar el análisis hacia aquellas categorías donde existen mayores diferencias y donde podrían existir oportunidades de mejora ambiental.
 
 ---
 
@@ -1082,17 +1100,36 @@ Esta comparación constituye la primera aproximación para interpretar las difer
 
 ### Interpretación
 
-Los gráficos muestran la comparación de impactos normalizados entre EDAR Cerceda y EDAR Vedra.
+Los gráficos presentan la comparación de impactos ambientales normalizados entre EDAR Cerceda y EDAR Vedra.
 
-La normalización permite comparar la magnitud relativa de los impactos ambientales eliminando diferencias asociadas a las unidades originales de cada categoría.
+La normalización constituye una etapa relevante dentro del análisis ACV, ya que permite transformar diferentes categorías de impacto, originalmente expresadas en unidades distintas, hacia una escala común de interpretación.
 
-El análisis permite identificar:
+Esta transformación facilita la comparación relativa entre categorías ambientales y permite identificar cuáles presentan una mayor relevancia dentro del sistema evaluado.
 
-- categorías donde existen mayores diferencias;
-- indicadores con mayor variabilidad;
-- comportamiento relativo de cada instalación.
+El análisis normalizado permite observar:
 
-Estos resultados facilitan la interpretación comparativa del desempeño ambiental de ambas EDAR.
+- diferencias relativas entre instalaciones;
+- categorías ambientales con mayor separación entre alternativas;
+- indicadores donde el comportamiento de ambas EDAR presenta tendencias diferenciadas;
+- posibles categorías críticas desde el punto de vista ambiental.
+
+La utilización de indicadores normalizados permite reducir la complejidad asociada a la interpretación de múltiples resultados ACV, facilitando la identificación de aquellos impactos donde las diferencias entre Cerceda y Vedra son más significativas.
+
+Desde una perspectiva comparativa, estos resultados permiten analizar no solamente qué instalación presenta mayores contribuciones ambientales, sino también en qué categorías se concentran dichas diferencias.
+
+Las variaciones observadas pueden estar asociadas a factores propios de cada instalación, incluyendo:
+
+- configuración tecnológica del tratamiento;
+- consumo energético requerido durante la operación;
+- eficiencia de eliminación de contaminantes;
+- gestión de residuos y subproductos generados;
+- características específicas del sistema analizado.
+
+El análisis mediante indicadores normalizados permite avanzar desde una comparación general hacia una interpretación más profunda del comportamiento ambiental de cada alternativa.
+
+Además, estos resultados proporcionan una base para los análisis posteriores de contribución y ranking, donde se identifican las categorías dominantes y se establecen prioridades de mejora ambiental.
+
+En conjunto, la normalización de resultados permite transformar un conjunto complejo de indicadores ambientales en información comparable, facilitando la interpretación técnica y la comunicación de resultados dentro del contexto del estudio ACV.
 
 ---
 
@@ -1205,9 +1242,9 @@ En conjunto, los resultados gráficos proporcionan una visión integrada del com
 
 # 7. Conclusiones del análisis comparativo
 
-El presente desarrollo permitió transformar los resultados obtenidos mediante el modelo de Análisis de Ciclo de Vida (ACV) en información estructurada, cuantificable y visualmente interpretable mediante herramientas de programación científica en Python.
+El presente desarrollo, realizado por **Ian Thomas Gálvez Zamora** en el marco del **Máster en Ingeniería Química y Bioprocesos**, permitió transformar los resultados obtenidos mediante el modelo de Análisis de Ciclo de Vida (ACV) en información estructurada, cuantificable y visualmente interpretable mediante herramientas de programación científica en Python.
 
-La metodología implementada permitió establecer un flujo reproducible para la comparación ambiental entre las instalaciones EDAR Cerceda y EDAR Vedra, integrando extracción de datos, procesamiento matemático, generación automática de indicadores y representación gráfica de resultados.
+La metodología implementada permitió establecer un flujo reproducible para la comparación ambiental entre las instalaciones **EDAR Cerceda** y **EDAR Vedra**, integrando extracción de datos, procesamiento matemático, generación automática de indicadores y representación gráfica de resultados.
 
 Los resultados obtenidos mediante las diferentes visualizaciones permitieron identificar diferencias en el comportamiento ambiental de ambas instalaciones, facilitando el análisis de categorías con mayor contribución y la evaluación comparativa del desempeño ambiental.
 
@@ -1219,7 +1256,7 @@ El desarrollo gráfico permitió:
 - facilitar la interpretación de indicadores ambientales;
 - apoyar la identificación de oportunidades de mejora.
 
-La utilización de indicadores normalizados como HabEq y KgPO₄Eq permitió realizar comparaciones bajo criterios homogéneos, reduciendo la dificultad asociada a la interpretación de múltiples categorías ambientales con diferentes unidades de medida.
+La utilización de indicadores normalizados como **HabEq** y **KgPO₄Eq** permitió realizar comparaciones bajo criterios homogéneos, reduciendo la dificultad asociada a la interpretación de múltiples categorías ambientales con diferentes unidades de medida.
 
 Desde el punto de vista metodológico, la automatización desarrollada mediante Python representa una mejora significativa respecto al procesamiento manual de resultados, permitiendo:
 
@@ -1232,4 +1269,8 @@ La arquitectura desarrollada permite que la metodología aplicada pueda ser exte
 
 En este sentido, el proyecto no solo entrega una comparación puntual entre EDAR Cerceda y EDAR Vedra, sino que establece una herramienta computacional orientada al análisis ambiental basado en datos, integrando fundamentos de ACV, programación científica y visualización avanzada.
 
+Como resultado final, el trabajo desarrollado establece una relación directa entre los datos utilizados, los cálculos realizados y los resultados obtenidos, proporcionando una metodología transparente y reproducible para futuros estudios ambientales.
+
 Finalmente, los resultados obtenidos demuestran el valor de combinar metodologías ambientales tradicionales con herramientas digitales de procesamiento, permitiendo generar análisis más transparentes, reproducibles y útiles para apoyar procesos de toma de decisiones orientados hacia una gestión sostenible del ciclo del agua.
+
+El desarrollo realizado constituye una base técnica para futuras ampliaciones, considerando la incorporación de nuevos escenarios, actualización de inventarios ambientales y evaluación de estrategias orientadas a la reducción de impactos y mejora del desempeño ambiental.
