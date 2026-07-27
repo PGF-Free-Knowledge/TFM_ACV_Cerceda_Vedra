@@ -34,6 +34,7 @@ Ian Thomas Gálvez Zamora
 - [3. Objetivos del proyecto](#3-objetivos-del-proyecto)
 - [4. Alcance del desarrollo](#4-alcance-del-desarrollo)
 - [5. Metodología general del análisis](#5-metodología-general-del-análisis)
+- [6. Resultados del análisis comparativo](#6-resultados-del-análisis-comparativo)
 
 
 ---
@@ -1029,3 +1030,7 @@ El enfoque adoptado contribuye a la construcción de estudios ambientales más e
 
 
 ---
+
+---
+
+# 6. Resultados del análisis comparativo
