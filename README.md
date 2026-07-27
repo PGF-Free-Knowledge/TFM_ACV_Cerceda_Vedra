@@ -1034,3 +1034,160 @@ El enfoque adoptado contribuye a la construcción de estudios ambientales más e
 ---
 
 # 6. Resultados del análisis comparativo
+
+Los resultados obtenidos mediante el procesamiento computacional de los indicadores ACV fueron transformados en representaciones gráficas para facilitar la comparación ambiental entre EDAR Cerceda y EDAR Vedra.
+
+El análisis gráfico permite identificar diferencias entre instalaciones, categorías ambientales dominantes y tendencias generales del comportamiento ambiental.
+
+---
+
+## 6.1 Comparación global de impactos ambientales
+
+<p align="center">
+
+<img src="figuras/Figura_Final_ACV.png" width="90%">
+
+</p>
+
+### Interpretación
+
+La figura presenta una visión global de los impactos ambientales obtenidos mediante el análisis de ciclo de vida para las instalaciones EDAR Cerceda y EDAR Vedra.
+
+La representación permite observar el comportamiento comparativo de ambas instalaciones considerando las categorías ambientales evaluadas.
+
+Los resultados permiten identificar:
+
+- diferencias generales entre instalaciones;
+- categorías con mayores contribuciones ambientales;
+- tendencias de comportamiento entre alternativas.
+
+Esta comparación constituye la primera aproximación para interpretar las diferencias ambientales obtenidas mediante el modelo ACV.
+
+---
+
+## 6.2 Comparación de impactos normalizados
+
+<p align="center">
+
+<img src="figuras/Figura_Final_Comparacion_HabEq.png" width="90%">
+
+</p>
+
+<p align="center">
+
+<img src="figuras/Figura_Final_Comparacion_KgPO4Eq.png" width="90%">
+
+</p>
+
+### Interpretación
+
+Los gráficos muestran la comparación de impactos normalizados entre EDAR Cerceda y EDAR Vedra.
+
+La normalización permite comparar la magnitud relativa de los impactos ambientales eliminando diferencias asociadas a las unidades originales de cada categoría.
+
+El análisis permite identificar:
+
+- categorías donde existen mayores diferencias;
+- indicadores con mayor variabilidad;
+- comportamiento relativo de cada instalación.
+
+Estos resultados facilitan la interpretación comparativa del desempeño ambiental de ambas EDAR.
+
+---
+
+## 6.3 Análisis detallado de indicadores ambientales
+
+### Indicadores asociados a HabEq
+
+<p align="center">
+
+<img src="figuras/Figura_01_HabEq.png" width="90%">
+
+</p>
+
+### Interpretación
+
+El análisis expresado en equivalente habitante permite evaluar los impactos considerando la carga ambiental asociada a la población equivalente tratada.
+
+Este indicador facilita comparar instalaciones con diferentes características operacionales, permitiendo analizar el desempeño ambiental relativo del sistema.
+
+---
+
+### Indicadores asociados a KgPO4Eq
+
+<p align="center">
+
+<img src="figuras/Figura_02_KgPO4Eq_Final.png" width="90%">
+
+</p>
+
+### Interpretación
+
+La representación basada en KgPO4Eq permite analizar las diferencias relacionadas con categorías ambientales asociadas a eutrofización y cargas equivalentes de fósforo.
+
+Este análisis permite identificar diferencias específicas entre instalaciones y determinar qué sistemas presentan mayores contribuciones en determinadas categorías ambientales.
+
+---
+
+## 6.4 Ranking comparativo de impactos ambientales
+
+<p align="center">
+
+<img src="figuras/Ranking_Cerceda_HabEq.png" width="80%">
+
+</p>
+
+<p align="center">
+
+<img src="figuras/Ranking_Vedra_HabEq.png" width="80%">
+
+</p>
+
+<p align="center">
+
+<img src="figuras/Ranking_Cerceda_KgPO4Eq.png" width="80%">
+
+</p>
+
+<p align="center">
+
+<img src="figuras/Ranking_Vedra_KgPO4Eq.png" width="80%">
+
+</p>
+
+### Interpretación
+
+Los rankings permiten ordenar las categorías ambientales según su contribución relativa dentro del sistema evaluado.
+
+Esta representación facilita identificar:
+
+- categorías ambientales dominantes;
+- principales fuentes de impacto;
+- diferencias entre Cerceda y Vedra.
+
+El análisis permite establecer prioridades para futuras estrategias de mejora ambiental.
+
+---
+
+## 6.5 Síntesis de resultados gráficos
+
+La integración de las diferentes representaciones gráficas permite transformar resultados ACV complejos en información visual interpretable.
+
+Los principales resultados obtenidos permiten:
+
+- comparar objetivamente EDAR Cerceda y EDAR Vedra;
+- identificar categorías ambientales críticas;
+- analizar diferencias relativas entre instalaciones;
+- facilitar la comunicación de resultados técnicos.
+
+La generación automática de figuras mediante Python garantiza trazabilidad, reproducibilidad y consistencia en la presentación de resultados.
+
+---
+
+# 7. Conclusiones del análisis comparativo
+
+El análisis desarrollado permitió integrar metodología ACV, procesamiento computacional y visualización gráfica para evaluar comparativamente dos instalaciones de tratamiento de aguas residuales.
+
+Los resultados gráficos permiten comprender el comportamiento ambiental de cada alternativa, identificar categorías relevantes y establecer diferencias entre sistemas evaluados.
+
+La metodología implementada proporciona una base reproducible para futuros estudios ambientales mediante herramientas de análisis de datos y programación científica.
