@@ -33,7 +33,7 @@ Ian Thomas Gálvez Zamora
 - [2. Contexto del estudio](#2-contexto-del-estudio)
 - [3. Objetivos del proyecto](#3-objetivos-del-proyecto)
 - [4. Alcance del desarrollo](#4-alcance-del-desarrollo)
-- [5. Metodología general del análisis](#5-metodologia-general-del-analisis)
+- [5. Metodología general del análisis](#5-metodología-general-del-análisis)
 
 
 ---
