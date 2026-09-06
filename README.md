@@ -1139,7 +1139,7 @@ En conjunto, la normalización de resultados permite transformar un conjunto com
 
 <p align="center">
 
-<img src="figuras/Figura_01_HabEq.png" width="90%">
+<img src="figuras/Figura_01_HabEq_Final.png" width="90%">
 
 </p>
 
